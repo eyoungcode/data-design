@@ -8,3 +8,4 @@
 <body>
 		<h1>User Persona</h1>
 	</body>
+	<h2>User Story</h2>
