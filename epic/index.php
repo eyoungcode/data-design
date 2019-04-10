@@ -11,5 +11,6 @@
 		<p><a href="./persona.php">Persona</a><p>
 			<p><a href="./user-story.php">User-story</a><p>
 				<p><a href="./user-case.php">User-case</a><p>
+		<p><a href="./conceptual-model.php">Conceptual-model</a><p>
 	</body>
 </html>

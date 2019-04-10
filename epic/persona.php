@@ -50,4 +50,4 @@
 <p><a href="./index.php">Home</a><p>
 <p><a href="./user-story.php">User-story</a><p>
 <p><a href="./user-case.php">User-case</a><p>
-<p><a href="./Conceptual Model.php">Conceptual Model</a><p>
+<p><a href="conceptual-model.php">Conceptual Model</a><p>

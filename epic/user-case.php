@@ -9,4 +9,4 @@
 <p><a href="./index.php">Home</a><p>
 <p><a href="./persona.php">persona</a><p>
 <p><a href="./user-story.php">user-story</a><p>
-<p><a href="./Conceptual Model.php">Conceptual Model</a><p>
+<p><a href="conceptual-model.php">Conceptual Model</a><p>
