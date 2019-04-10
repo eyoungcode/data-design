@@ -3,9 +3,9 @@
 	<p><strong>Entities & Attributes:</strong></p>
 	<li>
 		<strong>User</strong>
-		<p>UserID (primary key)</p>
-		<p>UserName</p>
-		<p></p>
+		<p>UserName (primary key)</p>
+		<p>UserEmailAddress</p>
+		<p>UserPassword</p>
 	</li>
 	<li>
 		<strong>Shopping Cart</strong>
