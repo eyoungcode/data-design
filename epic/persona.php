@@ -14,7 +14,7 @@
 	</li>
 	<li>
 		<strong>Technical Abilities</strong>
-		Cell Phone, Tablet, Laptop
+		Cell Phone - Samsung Galaxy s10, Tablet - Apple Ipad Pro, Laptop - Microsoft Surface Pro 6
 	</li>
 	<li>
 		<strong>Technical Proficiency</strong>

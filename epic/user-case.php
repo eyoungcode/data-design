@@ -1,12 +1,12 @@
 <p>
-	1.Likes to buy games from Game Stop
+	1.Review the number of items in shopping cart
 </p>
 <p>
-	2.Does not like to play online games alone, so he sometimes buys multiple copies to give to his gaming friends
+	2.If you want to modify the quantity
 </p>
-<p>3.Goes to quality and modifies the number of games he is purchasing</p>
+<p>3.Click on quantity, place number of how many you want to purchase</p>
 <p>
-	4.He must fill out shipping information either as a guest or a Game Stop user</p>
+	<p>4.Click update</p>
 <p><a href="./index.php">Home</a><p>
 <p><a href="./persona.php">persona</a><p>
 <p><a href="./user-story.php">user-story</a><p>
