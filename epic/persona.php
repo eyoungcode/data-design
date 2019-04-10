@@ -34,7 +34,7 @@
 	<li>
 	<strong>Dislikes:</strong>
 		<p>When it takes to long to get his products he purchases online</p>
-		<p>Cats *no Mewo mix for me*</p>
+		<p>Cats *no <strong>Mewo</strong> mix for me*</p>
 		<p>People who can't take direction</p>
 		<p>Websites that take to long to load</p>
 	</li>
@@ -50,3 +50,4 @@
 <p><a href="./index.php">Home</a><p>
 <p><a href="./user-story.php">User-story</a><p>
 <p><a href="./user-case.php">User-case</a><p>
+<p><a href="./Conceptual Model.php">Conceptual Model</a><p>
