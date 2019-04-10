@@ -3,12 +3,13 @@
 	<meta charset="UTF-8">
 
 	<h1>Data Design</h1>
+	<h2>click on links below:</h2>
 
 	<body>
-		<h2>User Persona</h2>
-		<img src="razer-thresher-ultimate-ps4-7.jpg" alt="gamer" style=":width: 400px; height:400px"/>
-		<h3>User Story</h3>
-		<div>
-			<h4>User Case</h4>
-		</div>
+
+
+		<p><a href="./persona.php">persona</a><p>
+			<p><a href="./user-story.php">user-story</a><p>
+				<p><a href="./user-case.php">user-case</a><p>
 	</body>
+</html>
