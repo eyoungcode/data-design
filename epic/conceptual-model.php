@@ -6,14 +6,13 @@
 		<p>UserName (primary key)</p>
 		<p>UserEmailAddress</p>
 		<p>UserPassword</p>
+		<p>UserShoppingCart</p>
 	</li>
 	<li>
 		<strong>Shopping Cart</strong>
 		<p>ShoppingCartID (primary ID)</p>
-		<p>UserName</p>
-		<p>UserEmail</p>
-		<p>UserAddress</p>
-		<p>UserPhoneNumber</p>
+		<p>ShoppingCartItems</p>
+		<p>ShoppingCartAmount</p>
 	</li>
 	<li>
 		<strong>Relations</strong>
