@@ -1,4 +1,4 @@
-<img src="razer-thresher-ultimate-ps4-7.jpg" alt="gamer" style=":width: 400px; height:400px"/>
+<img src="images/razer-thresher-ultimate-ps4-7.jpg" alt="gamer" style=":width: 400px; height:400px"/>
 <ul>
 	<li>
 	<strong>Name</strong>
