@@ -3,16 +3,21 @@
 	<p><strong>Entities & Attributes:</strong></p>
 	<li>
 		<strong>User</strong>
-		<p>UserName (primary key)</p>
-		<p>UserEmailAddress</p>
-		<p>UserPassword</p>
-		<p>UserShoppingCart</p>
+		<p>userID (primary key)</p>
+		<p>userEmailAddress</p>
+		<p>userPassword</p>
+		<p>userShoppingCart</p>
 	</li>
 	<li>
 		<strong>Shopping Cart</strong>
-		<p>ShoppingCartID (primary ID)</p>
-		<p>ShoppingCartItems</p>
-		<p>ShoppingCartAmount</p>
+		<p>shoppingCartID (primary key)</p>
+		<p>shoppingCartItems</p>
+	</li>
+	<li>
+		<strong>Item</strong>
+		<p>itemID (weak)</p>
+		<p>itemAmount (foreign key)</p>
+		<p>itemCost(foreign key)</p>
 	</li>
 	<li>
 		<strong>Relations</strong>
