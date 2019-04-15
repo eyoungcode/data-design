@@ -20,7 +20,7 @@ primary key(shoppingCartId)
 create table item (
 	itemId binary(16) not null,
 	itemAmount binary(16),
-	itemCost binary (64),
+	itemCost binary (16),
 	Primary key(itemId),
-	foreign key(itemAmount, itemCost)
+	foreign key(itemAmount, itemCost)references user(UserId)
 );
