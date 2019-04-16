@@ -17,18 +17,16 @@ create table cart (
 	primary key(cartId),
 	foreign key (cartUserId) references user(userId)
 );
-
+create table item (
+	itemId binary(16) not null,
+	itemAmount binary(16),
+	itemCost binary(16),
+	primary key (itemId)
+);
 create table cartItem (
 	cartItemAmount binary(16) not null,
 	cartItemCartId binary(16) not null,
 	cartItemItemId binary (16) not null,
 	foreign key (cartItemCartId) references cart(cartId),
 	foreign key (cartItemItemId) references item(itemId)
-
-);
-create table item (
-	itemId binary(16) not null,
-	itemAmount binary(16),
-	itemCost binary(16),
-	primary key (itemId)
 );
