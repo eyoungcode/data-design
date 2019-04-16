@@ -1,7 +1,7 @@
-drop table if exists item;
-drop table if exists cart;
 drop table if exists cartItem;
+drop table if exists cart;
 drop table if exists user;
+drop table if exists item;
 
 create table user (
 	userId binary(16) not null,
@@ -10,26 +10,25 @@ create table user (
 	primary key(userId)
 );
 
-create table cart(
+create table cart (
 	cartId binary(16) not null,
-cartAmount binary,
-cartUserId binary,
-primary key(cartId),
-foreign key (cartUserId)references user (UserId)
+	cartAmount binary(16) not null,
+	cartUserId binary(16) not null,
+	primary key(cartId),
+	foreign key (cartUserId) references user(userId)
 );
 
 create table cartItem (
-	cartItemCost binary (16),
-	cartItemCart VARCHAR(255),
-	cartItemItemId binary (64) not null,
-	foreign key (cartItemCart) references cart (cartAmount),
-	foreign key (cartItemItemId)references item (itemId)
+	cartItemAmount binary(16) not null,
+	cartItemCartId binary(16) not null,
+	cartItemItemId binary (16) not null,
+	foreign key (cartItemCartId) references cart(cartId),
+	foreign key (cartItemItemId) references item(itemId)
 
 );
 create table item (
 	itemId binary(16) not null,
-	itemAmount binary,
-	itemCost binary,
+	itemAmount binary(16),
+	itemCost binary(16),
 	primary key (itemId)
-
 );
