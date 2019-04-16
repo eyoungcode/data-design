@@ -1,5 +1,5 @@
 drop table if exists item;
-drop table if exists shoppingCart;
+drop table if exists cart;
 drop table if exists cartItem;
 drop table if exists user;
 
@@ -10,28 +10,26 @@ create table user (
 	primary key(userId)
 );
 
-create table shoppingCart(
-	shoppingCartId binary(16) not null,
-shoppingCartItems varchar(64),
-shoppingCartAmount binary (16),
-shoppingCartUserId binary (16),
-primary key(shoppingCartId),
-foreign key (shoppingCartUserId)references user (UserId)
+create table cart(
+	cartId binary(16) not null,
+cartAmount binary,
+cartUserId binary,
+primary key(cartId),
+foreign key (cartUserId)references user (UserId)
 );
 
 create table cartItem (
 	cartItemCost binary (16),
-	cartItemAmount binary (16),
-	cartItemId binary (16),
-	cartItemShoppingCartId binary (16),
-	foreign key (cartItemShoppingCartId)references shoppingCart (shoppingCartId)
+	cartItemCart VARCHAR(255),
+	cartItemItemId binary (64) not null,
+	foreign key (cartItemCart) references cart (cartAmount),
+	foreign key (cartItemItemId)references item (itemId)
 
 );
 create table item (
 	itemId binary(16) not null,
-	itemAmount binary(16),
-	itemCost binary (16),
-	itemCartItemId binary (16),
-	foreign key (itemCartItemId)references cartItem (cartItemId)
+	itemAmount binary,
+	itemCost binary,
+	primary key (itemId)
 
 );
