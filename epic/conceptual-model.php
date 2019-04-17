@@ -29,7 +29,7 @@
 
 </p>
 <li><strong>EDR Example</strong></li>
-<img src="images/shopping%20-cart2.jpg" alt="shopping cart" style=":width: 400px; height:400px"/>
+<img src="images/shopping_cart3.jpg" alt="shopping cart" style=":width: 400px; height:400px"/>
 
 <p><a href="./index.php">Home</a><p>
 <p><a href="./user-story.php">User-story</a><p>
