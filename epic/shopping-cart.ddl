@@ -19,7 +19,7 @@ create table cart (
 );
 create table item (
 	itemId binary(16) not null,
-	itemAmount binary(16),
+	itemAmount binary(16) not null,
 	itemCost binary(16),
 	primary key (itemId)
 );
