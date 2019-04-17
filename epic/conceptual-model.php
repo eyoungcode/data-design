@@ -3,23 +3,28 @@
 	<p><strong>Entities & Attributes:</strong></p>
 	<li>
 		<strong>User</strong>
-		<p>userID (primary key)</p>
+		<p>userId (primary key)</p>
 		<p>userEmailAddress</p>
 		<p>userPassword</p>
-		<p>userShoppingCart</p>
 	</li>
 	<li>
-		<strong>Shopping Cart</strong>
-		<p>shoppingCartID (primary key)</p>
-		<p>shoppingCartItems</p>
+		<strong>Cart</strong>
+		<p>cartId (primary key)</p>
+		<p>cartAmount</p>
+		<p>cartUserId (foreign key)</p>
 	</li>
 	<li>
 		<strong>Item</strong>
-		<p>itemID (weak)</p>
-		<p>itemAmount (foreign key)</p>
-		<p>itemCost(foreign key)</p>
+		<p>itemId (primary key)</p>
+		<p>itemAmount</p>
+		<p>itemCost</p>
 	</li>
 	<li>
+		<strong>CartItem</strong>
+		<p>cartItemAmount</p>
+		<p>cartItemCartId (foreign key)</p>
+		<p>cartItemItemId(foreign key)</p>
+		<li>
 		<strong>Relations</strong>
 		<p>One shopping cart for 1 user (1 to 1)</p>
 		<p>1 user can only have 1 shopping cart (1 to 1)</p>
