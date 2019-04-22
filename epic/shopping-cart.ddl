@@ -5,11 +5,10 @@ drop table if exists item;
 
 create table user (
 	userId binary(16) not null,
-	userEmilAddress varchar(128),
+	userEmailAddress varchar(128),
 	userPassword varchar(128),
 	primary key(userId)
 );
-
 create table cart (
 	cartId binary(16) not null,
 	cartAmount binary(16) not null,
