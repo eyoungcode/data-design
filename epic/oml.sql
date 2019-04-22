@@ -1,7 +1,3 @@
-drop table if exists user;
-drop table if exists cart;
-
-
 create table user (
 	userId binary(16) not null,
 	userEmailAddress varchar(128),
@@ -9,8 +5,8 @@ create table user (
 	primary key(userId)
 );
 insert into user
-(userId, userPassword)
-	VALUE (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7'), 'bob');
+(userId, userEmailAddress, userPassword)
+	VALUE (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7'), 'bobjorge@gmail.com', 'bob');
 
 
 update user set userPassword = 'erik' where userPassword ='bob';
@@ -24,10 +20,10 @@ create table cart (
 	primary key (cartId),
 	foreign key (cartUserId) references user(userId)
 );
-		INSERT Into cart set cartUserId = UNHEX('bd33447d4aed46efb5d07103c23e4070');
-select cartId from cart where cartUserId = UNHEX('bd33447d4aed46efb5d07103c23e4070');
-select cart.cartId from cart inner join user on user.userId = cartUserId where cartId = (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7');
-select cartId from cart where cartAmount = 5;
+		INSERT Into cart (CartId, cartAmount)VALUES (UNHEX('aeb0ecbfac0642c8a9626feb861bbd5f'), '500');
+select cartAmount from cart where cartAmount = 5001;
+select cartId from cart inner join user on userId = (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7'));
+select cartId from cart where cartAmount = 5850;
 
 
 /*
