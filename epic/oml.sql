@@ -10,9 +10,8 @@ create table user (
 );
 insert into user
 (userId, userPassword)
-	VALUE ('12334', 'bob'),
-	('55555', 'ted'),
-	('6485458', '745swed');
+	VALUE (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7'), 'bob');
+
 
 update user set userPassword = 'erik' where userPassword ='bob';
 
@@ -25,10 +24,10 @@ create table cart (
 	primary key (cartId),
 	foreign key (cartUserId) references user(userId)
 );
-		INSERT Into cart set cartUserId = UNHEX('d0b9acef1a124564ac8387fbf5aa1cf7');
-select cartId from cart where cartUserId = UNHEX('d0b9acef1a124564ac8387fbf5aa1cf7');
-select cart.cartId from cart inner join user on user.userId = cartUserId where cartId = '233'
-select cartId from cart where cartAmount > 5;
+		INSERT Into cart set cartUserId = UNHEX('bd33447d4aed46efb5d07103c23e4070');
+select cartId from cart where cartUserId = UNHEX('bd33447d4aed46efb5d07103c23e4070');
+select cart.cartId from cart inner join user on user.userId = cartUserId where cartId = (UNHEX ('db58fdd75a2743e39a0d45397cd0dbc7');
+select cartId from cart where cartAmount = 5;
 
 
 /*
