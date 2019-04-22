@@ -18,6 +18,7 @@ delete from user where userPassword = 'ted';
 select cartAmount from cart where cartAmount = 5001;
 select cartId from cart where cartAmount = 5850;
 
+SELECT COUNT (tweetProfileId) from `like` WHERE tweetID (UNHEX('202a4a5c08144d6a85383d4b609d410e'));
 
 /*
 Write and execute an insert statement on a table with a foreign key from the original table.
